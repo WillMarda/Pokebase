@@ -24,7 +24,7 @@ class KantoDex{
         KantoPokedex.append(Ivysaur);
         
         let Venasaur = Pokemon();
-        Venasaur.NewPokemon(newIndex: "003", newName: "Ivysaur", newImage: #imageLiteral(resourceName: "venusaur"), newHp: 80, newAttack: 82, newDefense: 83, newSpeed: 80, newSp_Def: 100, newSp_Att: 100);
+        Venasaur.NewPokemon(newIndex: "003", newName: "Venasaur", newImage: #imageLiteral(resourceName: "venusaur"), newHp: 80, newAttack: 82, newDefense: 83, newSpeed: 80, newSp_Def: 100, newSp_Att: 100);
         KantoPokedex.append(Venasaur);
         
         let Charmander = Pokemon();

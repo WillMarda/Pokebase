@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="PokeDB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,23 +31,10 @@
                         <color key="backgroundColor" red="0.9978188872" green="0.43506189760000002" blue="0.40737264680000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="s9D-da-UMP"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aap-8n-v4f"/>
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
-                        <outlet property="BackButton" destination="RWX-M4-hKF" id="xBo-gk-AWj"/>
-                        <outlet property="HpSlider" destination="htX-d1-eN8" id="2xk-cO-j9G"/>
-                        <outlet property="InformationView" destination="W0p-ZR-f9P" id="iYI-Pe-bKw"/>
-                        <outlet property="PokeImageViewer" destination="NTJ-Bb-unu" id="ech-jv-InM"/>
-                        <outlet property="PokeName" destination="ua5-lc-euh" id="wNq-Mh-j6i"/>
                         <outlet property="PokemonListView" destination="j1P-Sl-MZd" id="HIF-Lu-D6Y"/>
-                        <outletCollection property="PokemonButtons" destination="Tbe-cP-Bcu" collectionClass="NSMutableArray" id="hN8-0I-JV8"/>
-                        <outletCollection property="PokemonButtons" destination="vwL-eq-lnX" collectionClass="NSMutableArray" id="5Lz-uC-Xnc"/>
-                        <outletCollection property="PokemonButtons" destination="NAp-8w-5i9" collectionClass="NSMutableArray" id="9jx-87-ea3"/>
-                        <outletCollection property="PokemonButtons" destination="tqP-Rl-lW5" collectionClass="NSMutableArray" id="AJD-eI-SKY"/>
-                        <outletCollection property="PokemonButtons" destination="z65-w8-l0F" collectionClass="NSMutableArray" id="5FW-Sl-Vj8"/>
-                        <outletCollection property="PokemonButtons" destination="2cH-FD-7eJ" collectionClass="NSMutableArray" id="ppm-og-8Ok"/>
-                        <outletCollection property="PokemonButtons" destination="dbE-Hm-pv7" collectionClass="NSMutableArray" id="ITv-la-ajh"/>
-                        <outletCollection property="PokemonButtons" destination="O7Z-ab-OGL" collectionClass="NSMutableArray" id="hp5-yF-jhe"/>
-                        <outletCollection property="PokemonButtons" destination="QoC-cw-lxM" collectionClass="NSMutableArray" id="9Fv-jL-Mim"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -81,7 +68,10 @@
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="PokemonButtons_Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zWo-A7-gO6"/>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xcX-Wc-9Jh" eventType="touchUpInside" id="JWS-1a-2sm"/>
+                                                            <segue destination="oZn-2s-x9b" kind="popoverPresentation" identifier="InfoSegue" popoverAnchorView="NAp-8w-5i9" id="DYK-7P-tVS">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                                                            </segue>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqP-Rl-lW5" customClass="ImButton" customModule="PokeDB" customModuleProvider="target">
@@ -94,7 +84,10 @@
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="PokemonButtons_Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHn-bU-6eJ"/>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xcX-Wc-9Jh" eventType="touchUpInside" id="qIN-S0-6ko"/>
+                                                            <segue destination="oZn-2s-x9b" kind="popoverPresentation" popoverAnchorView="tqP-Rl-lW5" id="HMl-oR-nGg">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                                                            </segue>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cH-FD-7eJ" customClass="ImButton" customModule="PokeDB" customModuleProvider="target">
@@ -107,7 +100,10 @@
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="PokemonButtons_Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4iW-bk-fiG"/>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xcX-Wc-9Jh" eventType="touchUpInside" id="OZY-5L-gVB"/>
+                                                            <segue destination="oZn-2s-x9b" kind="popoverPresentation" popoverAnchorView="2cH-FD-7eJ" id="MRJ-I6-ssK">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                                                            </segue>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbE-Hm-pv7" customClass="ImButton" customModule="PokeDB" customModuleProvider="target">
@@ -118,7 +114,10 @@
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="PokemonButtons_Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wOZ-yJ-xuX"/>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xcX-Wc-9Jh" eventType="touchUpInside" id="TYS-o9-Osa"/>
+                                                            <segue destination="oZn-2s-x9b" kind="popoverPresentation" popoverAnchorView="dbE-Hm-pv7" id="G65-3o-ore">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                                                            </segue>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z65-w8-l0F" customClass="ImButton" customModule="PokeDB" customModuleProvider="target">
@@ -130,6 +129,10 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="PokemonButtons_Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PVQ-7o-0Gi"/>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xcX-Wc-9Jh" eventType="touchUpInside" id="ViF-eI-GV8"/>
+                                                            <segue destination="oZn-2s-x9b" kind="popoverPresentation" popoverAnchorView="z65-w8-l0F" id="jV3-7L-GhZ">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                                                            </segue>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwL-eq-lnX" customClass="ImButton" customModule="PokeDB" customModuleProvider="target">
@@ -141,6 +144,10 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="PokemonButtons_Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Chg-5j-psb"/>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xcX-Wc-9Jh" eventType="touchUpInside" id="fgJ-mq-fih"/>
+                                                            <segue destination="oZn-2s-x9b" kind="popoverPresentation" popoverAnchorView="vwL-eq-lnX" id="7aY-nv-weV">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                                                            </segue>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbe-cP-Bcu" customClass="ImButton" customModule="PokeDB" customModuleProvider="target">
@@ -151,7 +158,11 @@
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
                                                         <connections>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xcX-Wc-9Jh" eventType="touchUpInside" id="CGC-tN-wK0"/>
                                                             <action selector="PokemonButtons_Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PCz-cl-VDf"/>
+                                                            <segue destination="oZn-2s-x9b" kind="popoverPresentation" popoverAnchorView="Tbe-cP-Bcu" id="oOU-L5-uW8">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                                                            </segue>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoC-cw-lxM" customClass="ImButton" customModule="PokeDB" customModuleProvider="target">
@@ -163,6 +174,10 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="PokemonButtons_Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="65C-0L-Omu"/>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xcX-Wc-9Jh" eventType="touchUpInside" id="qdK-7L-5P2"/>
+                                                            <segue destination="oZn-2s-x9b" kind="popoverPresentation" popoverAnchorView="QoC-cw-lxM" id="lu9-l8-RMU">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                                                            </segue>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7Z-ab-OGL" customClass="ImButton" customModule="PokeDB" customModuleProvider="target">
@@ -174,6 +189,10 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="PokemonButtons_Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TZa-Yc-4tF"/>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xcX-Wc-9Jh" eventType="touchUpInside" id="sw1-Xk-EbM"/>
+                                                            <segue destination="oZn-2s-x9b" kind="popoverPresentation" popoverAnchorView="O7Z-ab-OGL" id="4EV-T8-TVW">
+                                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
+                                                            </segue>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKk-tT-XPb" customClass="ImButton" customModule="PokeDB" customModuleProvider="target">
@@ -1333,7 +1352,7 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" id="has-kI-6Ah"/>
+                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="HomeSegue" id="has-kI-6Ah"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1365,6 +1384,15 @@
                     <navigationItem key="navigationItem" id="v88-Bp-8oW"/>
                     <connections>
                         <outlet property="view" destination="xhO-s3-fE9" id="pXX-lW-Z5i"/>
+                        <outletCollection property="PokemonButtons" destination="NAp-8w-5i9" collectionClass="NSMutableArray" id="u1T-q9-Wx0"/>
+                        <outletCollection property="PokemonButtons" destination="tqP-Rl-lW5" collectionClass="NSMutableArray" id="b6G-PZ-XdR"/>
+                        <outletCollection property="PokemonButtons" destination="2cH-FD-7eJ" collectionClass="NSMutableArray" id="Ulb-Dz-QpA"/>
+                        <outletCollection property="PokemonButtons" destination="dbE-Hm-pv7" collectionClass="NSMutableArray" id="Kj1-MC-qab"/>
+                        <outletCollection property="PokemonButtons" destination="z65-w8-l0F" collectionClass="NSMutableArray" id="jjJ-ed-7eu"/>
+                        <outletCollection property="PokemonButtons" destination="vwL-eq-lnX" collectionClass="NSMutableArray" id="KLK-lz-20R"/>
+                        <outletCollection property="PokemonButtons" destination="Tbe-cP-Bcu" collectionClass="NSMutableArray" id="Epl-l4-PPD"/>
+                        <outletCollection property="PokemonButtons" destination="QoC-cw-lxM" collectionClass="NSMutableArray" id="kIt-M5-7gK"/>
+                        <outletCollection property="PokemonButtons" destination="O7Z-ab-OGL" collectionClass="NSMutableArray" id="7h8-Sq-w0T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W3z-ci-lPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1374,120 +1402,46 @@
         <!--InformationView-->
         <scene sceneID="ePu-DC-17j">
             <objects>
-                <viewController title="InformationView" id="oZn-2s-x9b" customClass="InformationViewController" customModule="PokeDB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InformationView" title="InformationView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oZn-2s-x9b" customClass="InformationViewController" customModule="PokeDB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pg5-e0-kRu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0p-ZR-f9P" userLabel="InformationView">
-                                <rect key="frame" x="0.0" y="25" width="414" height="852"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ua5-lc-euh">
+                                <rect key="frame" x="41" y="20" width="333" height="54"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NTJ-Bb-unu">
+                                <rect key="frame" x="87" y="82" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NTJ-Bb-unu">
-                                        <rect key="frame" x="87" y="116.33333333333336" width="240" height="230.66666666666663"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ua5-lc-euh">
-                                        <rect key="frame" x="87" y="28.000000000000004" width="240" height="38.333333333333343"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWX-M4-hKF" userLabel="BackButton">
-                                        <rect key="frame" x="8" y="8" width="39" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" image="arrow.left.circle" catalog="system"/>
-                                        <connections>
-                                            <action selector="BackButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oG2-mP-Wey"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Base Hp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eG-qC-8dW">
-                                        <rect key="frame" x="87" y="355" width="240" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="NWE-Pw-NZR">
-                                        <rect key="frame" x="25" y="387" width="596.33333333333337" height="30"/>
-                                        <subviews>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="htX-d1-eN8" userLabel="Hp Slider">
-                                                <rect key="frame" x="-2" y="0.0" width="587.66666666666663" height="31"/>
-                                                <color key="minimumTrackTintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </slider>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Q7-OY-Hd2" userLabel="Hp Label">
-                                                <rect key="frame" x="583.66666666666663" y="0.0" width="12.666666666666629" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Base Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tif-Pj-Cox">
-                                        <rect key="frame" x="66" y="425" width="283.33333333333331" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="rtG-Gh-wUe">
-                                        <rect key="frame" x="20" y="457" width="596.33333333333337" height="30"/>
-                                        <subviews>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="87v-Tp-rf1" userLabel="Attack Slider">
-                                                <rect key="frame" x="-2" y="0.0" width="587.66666666666663" height="31"/>
-                                                <color key="minimumTrackTintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </slider>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXu-M7-dOz" userLabel="Attack Label">
-                                                <rect key="frame" x="583.66666666666663" y="0.0" width="12.666666666666629" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Base Defense" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQN-6r-b7v">
-                                        <rect key="frame" x="67" y="495" width="303.33333333333331" height="24"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="LbD-YM-XVG">
-                                        <rect key="frame" x="20" y="527" width="596.33333333333337" height="30"/>
-                                        <subviews>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="qYX-xC-9YB" userLabel="Defense Slider">
-                                                <rect key="frame" x="-2" y="0.0" width="587.66666666666663" height="31"/>
-                                                <color key="minimumTrackTintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </slider>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWi-NB-YR1" userLabel="Defense Label">
-                                                <rect key="frame" x="583.66666666666663" y="0.0" width="12.666666666666629" height="30"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WeR-dg-lis" firstAttribute="trailing" secondItem="ua5-lc-euh" secondAttribute="trailing" constant="40" id="1Ri-pa-UBJ"/>
+                            <constraint firstItem="ua5-lc-euh" firstAttribute="top" secondItem="WeR-dg-lis" secondAttribute="top" constant="20" id="a4D-Kz-5bT"/>
+                            <constraint firstItem="ua5-lc-euh" firstAttribute="leading" secondItem="WeR-dg-lis" secondAttribute="leading" constant="41" id="ysG-1T-a7y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WeR-dg-lis"/>
                     </view>
+                    <navigationItem key="navigationItem" id="b4D-8T-HNF"/>
+                    <connections>
+                        <outlet property="PokemonImageViewer" destination="NTJ-Bb-unu" id="Hoa-xv-xeI"/>
+                        <outlet property="PokemonNameLabel" destination="ua5-lc-euh" id="MYy-Vn-rTe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="goH-Vv-xRY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-103" y="50"/>
+            <point key="canvasLocation" x="-104.34782608695653" y="49.553571428571423"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4EV-T8-TVW"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="BlastSprite" width="34" height="38"/>
         <image name="BulbaSprite" width="32" height="32"/>
@@ -1498,6 +1452,5 @@
         <image name="SquirSprite" width="32" height="32"/>
         <image name="VenaSprite" width="43" height="39"/>
         <image name="WarSprite" width="32" height="32"/>
-        <image name="arrow.left.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>
