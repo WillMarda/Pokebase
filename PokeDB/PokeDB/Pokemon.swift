@@ -22,6 +22,13 @@ class Pokemon{
     var Speed: Float = 0.0;
     var Sp_Def: Float = 0.0;
     var Sp_Att: Float = 0.0;
+    var Evolution: Pokemon!;
+    var HasOnePreEvo: Bool = false;
+    var HasTwoPreEvos: Bool = false;
+    var PreEvolutionOne: Pokemon!;
+    var PreEvolutionTwo: Pokemon!;
+    var Level: Int = 0;
+    
     
     public func NewPokemon(newIndex: String, newName: String, newImage: UIImage, newHp: Float, newAttack: Float, newDefense: Float, newSpeed: Float, newSp_Def: Float, newSp_Att: Float){
         
@@ -40,5 +47,53 @@ class Pokemon{
         
         
     }
+    
+    public func GetName() -> String{
+        return Name;
+    }
+    
+    public func GetImage() -> UIImage{
+        return Image;
+    }
+    
+    public func NewEvolution(nextEvolution: Pokemon, nextLevel: Int){
+        Evolution = nextEvolution;
+        Level = nextLevel;
+    }
+
+    public func GetEvolution() -> Pokemon{
+        return Evolution!;
+    }
+    
+    
+    public func HasEvolution() -> Bool{
+        
+        if Evolution != nil{
+            return true;
+        }
+        else{
+            return false;
+        }
+        
+    }
+    
+    public func setHasOnePreEvolution(hasEvo: Bool){
+        HasOnePreEvo = hasEvo;
+    }
+
+    public func setHasTwoPreEvolutions(hasEvos: Bool){
+        HasTwoPreEvos = hasEvos;
+    }
+    
+    public func HasOnePreEvolution() -> Bool{
+        return HasOnePreEvo;
+    }
+
+    public func HasTwoPreEvolutions() -> Bool{
+        return HasTwoPreEvos;
+    }
+    
+
+
     
 }
