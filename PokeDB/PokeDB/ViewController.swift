@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     var NewPokedex = Pokedex();
     var MyMon: Pokemon!;
     var PokeImage: UIImage = #imageLiteral(resourceName: "bulbasaur");
+    var TypeOneImage: UIImage = #imageLiteral(resourceName: "Empty");
+    var TypeTwoImage: UIImage = #imageLiteral(resourceName: "Empty");
     var PokeName: String = "";
     var BaseHp: Float = 0.0;
     var BaseAttack: Float = 0.0;
@@ -31,6 +33,15 @@ class ViewController: UIViewController {
     var PreEvolutionOne: Pokemon?;
     var PreEvolutionTwo: Pokemon?;
     var Level: Int?;
+    var Ability: String!;
+    var HiddenAbility: String!;
+    
+    var EggGroup: String!;
+    var EggCycle: Int!;
+    var EggCycleSteps: String!;
+    var MaleGenderRatio: Double!;
+    var FemaleGenderRatio: Double!;
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,6 +90,15 @@ class ViewController: UIViewController {
             controller.MyBaseSpeed = BaseSpeed;
             controller.MyBaseSpe_Def = BaseSpe_Def;
             controller.MyBaseSpe_Att = BaseSpe_Att;
+            controller.MyAbility = Ability;
+            controller.MyHiddenAbility = HiddenAbility;
+            controller.MyMaleGenderRatio = MaleGenderRatio;
+            controller.MyFemaleGenderRatio = FemaleGenderRatio;
+            controller.MyEggGroup = EggGroup;
+            controller.MyEggCycle = EggCycle;
+            controller.MyEggCycleSteps = EggCycleSteps;
+            controller.MyFirstType = TypeOneImage;
+            controller.MySecondType = TypeTwoImage;
             
             // First we get the current pokemon and check to see if it has an evolution.
             if MyMon.HasEvolution() == true{
@@ -122,6 +142,8 @@ class ViewController: UIViewController {
         
         // Then we get all its values!
         PokeImage = MyMon.Image;
+        TypeOneImage = MyMon.TypeOneImage;
+        TypeTwoImage = MyMon.TypeTwoImage;
         PokeName = MyMon.Name;
         BaseHp = MyMon.Hp;
         BaseAttack = MyMon.Attack;
@@ -129,8 +151,14 @@ class ViewController: UIViewController {
         BaseSpeed = MyMon.Speed;
         BaseSpe_Def = MyMon.Sp_Def;
         BaseSpe_Att = MyMon.Sp_Att;
+        Ability = MyMon.Ability;
+        HiddenAbility = MyMon.HiddenAbility;
+        EggCycle = MyMon.EggCycle;
+        EggGroup = MyMon.EggGroup;
+        EggCycleSteps = MyMon.EggCycleSteps;
+        MaleGenderRatio = MyMon.GenderRatioMale
+        FemaleGenderRatio = MyMon.GenderRatioFemale;
         
-
         // First we check to see if the current pokemon has an evolution
         if MyMon.HasEvolution() == true{
             Evolution = MyMon.Evolution;

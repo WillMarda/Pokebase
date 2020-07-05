@@ -140,8 +140,6 @@ class Pokedex{
         
     }
     
-    
-    
     public func CreatePokedex(){
         
         KantoDex();
@@ -154,13 +152,13 @@ class Pokedex{
         //-------------------Kanto Pokedex. # 001 - #151 -------------------//
         
         let Bulbasaur = Pokemon();
-        Bulbasaur.NewPokemon(newIndex: "001", newName: "Bulbasaur", newImage: #imageLiteral(resourceName: "bulbasaur"), newHp: 45, newAttack: 49, newDefense: 49, newSpeed: 45, newSp_Def: 65, newSp_Att: 65);
+        Bulbasaur.NewPokemon(newIndex: "001", newName: "Bulbasaur", newImage: #imageLiteral(resourceName: "bulbasaur"), newFirstTypeImage: #imageLiteral(resourceName: "Grass"), newSecondTypeImage: #imageLiteral(resourceName: "Poison"), newHp: 45, newAttack: 49, newDefense: 49, newSpeed: 45, newSp_Def: 65, newSp_Att: 65, newAbility: "Overgrow", newHiddenAbility: "Chlorophyll", newEggGroup: "Grass, Monster", newMaleGenderRatio: 87.5, newFemaleGenderRatio: 12.5, newEggCycle: 20, newEggCycleSteps: "4,884–5,140 steps");
         
         let Ivysaur = Pokemon();
-        Ivysaur.NewPokemon(newIndex: "002", newName: "Ivysaur", newImage: #imageLiteral(resourceName: "ivysaur"), newHp: 60, newAttack: 62, newDefense: 63, newSpeed: 60, newSp_Def: 80, newSp_Att: 80);
+        Ivysaur.NewPokemon(newIndex: "002", newName: "Ivysaur", newImage: #imageLiteral(resourceName: "ivysaur"), newFirstTypeImage: #imageLiteral(resourceName: "Grass"), newSecondTypeImage: #imageLiteral(resourceName: "Poison"), newHp: 60, newAttack: 62, newDefense: 63, newSpeed: 60, newSp_Def: 80, newSp_Att: 80, newAbility: "Overgrow", newHiddenAbility: "Chlorophyll", newEggGroup: "Grass, Monster", newMaleGenderRatio: 87.5, newFemaleGenderRatio: 12.5, newEggCycle: 20, newEggCycleSteps: "4,884–5,140 steps");
         
         let Venasaur = Pokemon();
-        Venasaur.NewPokemon(newIndex: "003", newName: "Venasaur", newImage: #imageLiteral(resourceName: "venusaur"), newHp: 80, newAttack: 82, newDefense: 83, newSpeed: 80, newSp_Def: 100, newSp_Att: 100);
+        Venasaur.NewPokemon(newIndex: "003", newName: "Venasaur", newImage: #imageLiteral(resourceName: "venusaur"), newFirstTypeImage: #imageLiteral(resourceName: "Grass"), newSecondTypeImage: #imageLiteral(resourceName: "Poison"), newHp: 80, newAttack: 82, newDefense: 83, newSpeed: 80, newSp_Def: 100, newSp_Att: 100, newAbility: "Overgrow", newHiddenAbility: "Chlorophyll", newEggGroup: "Grass, Monster", newMaleGenderRatio: 87.5, newFemaleGenderRatio: 12.5, newEggCycle: 20, newEggCycleSteps: "4,884–5,140 steps");
         
         Bulbasaur.setHasOnePreEvolution(hasEvo: false);
         Bulbasaur.NewEvolution(nextEvolution: Ivysaur, nextLevel: 16 );
@@ -176,15 +174,14 @@ class Pokedex{
         Pokedex.append(Ivysaur);
         Pokedex.append(Venasaur);
         
-        
         let Charmander = Pokemon();
-        Charmander.NewPokemon(newIndex: "004", newName: "Charmander", newImage: #imageLiteral(resourceName: "charmander"), newHp: 39, newAttack: 52, newDefense: 43, newSpeed: 65, newSp_Def: 50, newSp_Att: 60);
+        Charmander.NewPokemon(newIndex: "004", newName: "Charmander", newImage: #imageLiteral(resourceName: "charmander"), newFirstTypeImage: #imageLiteral(resourceName: "Fire"), newSecondTypeImage: #imageLiteral(resourceName: "Empty"), newHp: 39, newAttack: 52, newDefense: 43, newSpeed: 65, newSp_Def: 50, newSp_Att: 60, newAbility: "Blaze", newHiddenAbility: "Solar Power", newEggGroup: "Dragon, Monster", newMaleGenderRatio: 87.5, newFemaleGenderRatio: 12.5, newEggCycle: 20, newEggCycleSteps: "4,884–5,140 steps");
         
         let Charmeleon = Pokemon();
-        Charmeleon.NewPokemon(newIndex: "005", newName: "Charmeleon", newImage: #imageLiteral(resourceName: "charmeleon"), newHp: 58, newAttack: 64, newDefense: 58, newSpeed: 80, newSp_Def: 65, newSp_Att: 80);
+        Charmeleon.NewPokemon(newIndex: "005", newName: "Charmeleon", newImage: #imageLiteral(resourceName: "charmeleon"), newFirstTypeImage: #imageLiteral(resourceName: "Fire"), newSecondTypeImage: #imageLiteral(resourceName: "Empty"), newHp: 58, newAttack: 64, newDefense: 58, newSpeed: 80, newSp_Def: 65, newSp_Att: 80, newAbility: "Blaze", newHiddenAbility: "Solar Power", newEggGroup: "Dragon, Monster", newMaleGenderRatio: 87.5, newFemaleGenderRatio: 12.5, newEggCycle: 20, newEggCycleSteps: "4,884–5,140 steps");
         
         let Charizard = Pokemon();
-        Charizard.NewPokemon(newIndex: "006", newName: "Charizard", newImage: #imageLiteral(resourceName: "charizard"), newHp: 78, newAttack: 84, newDefense: 78, newSpeed: 100, newSp_Def: 85, newSp_Att: 109);
+        Charizard.NewPokemon(newIndex: "006", newName: "Charizard", newImage: #imageLiteral(resourceName: "charizard"), newFirstTypeImage: #imageLiteral(resourceName: "Fire"), newSecondTypeImage: #imageLiteral(resourceName: "Flying"), newHp: 78, newAttack: 84, newDefense: 78, newSpeed: 100, newSp_Def: 85, newSp_Att: 109, newAbility: "Blaze", newHiddenAbility: "Solar Power", newEggGroup: "Dragon, Monster", newMaleGenderRatio: 87.5, newFemaleGenderRatio: 12.5, newEggCycle: 20, newEggCycleSteps: "4,884–5,140 steps");
         
         Charmander.NewEvolution(nextEvolution: Charmeleon, nextLevel: 16);
         
@@ -200,13 +197,13 @@ class Pokedex{
         Pokedex.append(Charizard);
         
         let Squirtle = Pokemon();
-        Squirtle.NewPokemon(newIndex: "007", newName: "Squirtle", newImage: #imageLiteral(resourceName: "squirtle"), newHp: 44, newAttack: 48, newDefense: 65, newSpeed: 43, newSp_Def: 64, newSp_Att: 50);
+        Squirtle.NewPokemon(newIndex: "007", newName: "Squirtle", newImage: #imageLiteral(resourceName: "squirtle"), newFirstTypeImage: #imageLiteral(resourceName: "Water"), newSecondTypeImage: #imageLiteral(resourceName: "Empty"), newHp: 44, newAttack: 48, newDefense: 65, newSpeed: 43, newSp_Def: 64, newSp_Att: 50, newAbility: "Torrent", newHiddenAbility: "Rain Dish", newEggGroup: "Monster, Water 1", newMaleGenderRatio: 87.5, newFemaleGenderRatio: 12.5, newEggCycle: 20, newEggCycleSteps: "4,884–5,140 steps");
         
         let Wartortle = Pokemon();
-        Wartortle.NewPokemon(newIndex: "008", newName: "Wartortle", newImage: #imageLiteral(resourceName: "wartortle"), newHp: 59, newAttack: 63, newDefense: 80, newSpeed: 58, newSp_Def: 80, newSp_Att: 65);
+        Wartortle.NewPokemon(newIndex: "008", newName: "Wartortle", newImage: #imageLiteral(resourceName: "wartortle"), newFirstTypeImage: #imageLiteral(resourceName: "Water"), newSecondTypeImage: #imageLiteral(resourceName: "Empty"), newHp: 59, newAttack: 63, newDefense: 80, newSpeed: 58, newSp_Def: 80, newSp_Att: 65, newAbility: "Torrent", newHiddenAbility: "Rain Dish",newEggGroup: "Monster, Water 1", newMaleGenderRatio: 87.5, newFemaleGenderRatio: 12.5, newEggCycle: 20, newEggCycleSteps: "4,884–5,140 steps");
         
         let Blastoise = Pokemon();
-        Blastoise.NewPokemon(newIndex: "009", newName: "Blastoise", newImage: #imageLiteral(resourceName: "blastoise"), newHp: 79, newAttack: 83, newDefense: 100, newSpeed: 78, newSp_Def: 105, newSp_Att: 85);
+        Blastoise.NewPokemon(newIndex: "009", newName: "Blastoise", newImage: #imageLiteral(resourceName: "blastoise"), newFirstTypeImage: #imageLiteral(resourceName: "Water"), newSecondTypeImage: #imageLiteral(resourceName: "Empty"), newHp: 79, newAttack: 83, newDefense: 100, newSpeed: 78, newSp_Def: 105, newSp_Att: 85, newAbility: "Torrent", newHiddenAbility: "Rain Dish",newEggGroup: "Monster, Water 1", newMaleGenderRatio: 87.5, newFemaleGenderRatio: 12.5, newEggCycle: 20, newEggCycleSteps: "4,884–5,140 steps");
         
         Squirtle.NewEvolution(nextEvolution: Wartortle, nextLevel: 16);
         

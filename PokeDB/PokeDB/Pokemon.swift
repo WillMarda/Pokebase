@@ -13,29 +13,43 @@ class Pokemon{
     
     var Index = "001";
     var Name = "";
-    var Image = #imageLiteral(resourceName: "bulbasaur");
+    var Image = #imageLiteral(resourceName: "Empty");
+    var TypeOneImage = #imageLiteral(resourceName: "Empty");
+    var TypeTwoImage = #imageLiteral(resourceName: "Empty");
     
     // Now we will add in the base stats of the pokemon!
+    var Level: Int = 0;
     var Hp: Float = 0;
     var Attack: Float = 0.0;
     var Defense: Float = 0.0;
     var Speed: Float = 0.0;
     var Sp_Def: Float = 0.0;
     var Sp_Att: Float = 0.0;
+    var Ability: String = "";
+    var HiddenAbility: String = "";
     var Evolution: Pokemon!;
     var HasOnePreEvo: Bool = false;
     var HasTwoPreEvos: Bool = false;
     var PreEvolutionOne: Pokemon!;
     var PreEvolutionTwo: Pokemon!;
-    var Level: Int = 0;
+    
+    // Breeding stuff
+    var EggGroup: String = "";
+    var EggCycle: Int = 0;
+    var EggCycleSteps: String = "";
+    var GenderRatioMale: Double = 0;
+    var GenderRatioFemale: Double = 0;
+
     
     
-    public func NewPokemon(newIndex: String, newName: String, newImage: UIImage, newHp: Float, newAttack: Float, newDefense: Float, newSpeed: Float, newSp_Def: Float, newSp_Att: Float){
+    public func NewPokemon(newIndex: String, newName: String, newImage: UIImage, newFirstTypeImage: UIImage, newSecondTypeImage: UIImage, newHp: Float, newAttack: Float, newDefense: Float, newSpeed: Float, newSp_Def: Float, newSp_Att: Float, newAbility: String, newHiddenAbility: String, newEggGroup: String, newMaleGenderRatio: Double, newFemaleGenderRatio: Double, newEggCycle: Int, newEggCycleSteps: String){
         
         // Main Values
         Index = newIndex;
         Name = newName;
         Image = newImage;
+        TypeOneImage = newFirstTypeImage;
+        TypeTwoImage = newSecondTypeImage;
         
         // Base Stats
         Hp = newHp;
@@ -45,6 +59,16 @@ class Pokemon{
         Sp_Def = newSp_Def;
         Sp_Att = newSp_Att;
         
+        // Abilities
+        Ability = newAbility;
+        HiddenAbility = newHiddenAbility;
+        
+        // Breeding
+        EggGroup = newEggGroup;
+        GenderRatioMale = newMaleGenderRatio;
+        GenderRatioFemale = newFemaleGenderRatio;
+        EggCycle = newEggCycle;
+        EggCycleSteps = newEggCycleSteps;
         
     }
     
