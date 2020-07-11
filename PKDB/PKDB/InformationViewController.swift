@@ -51,37 +51,10 @@ class InformationViewController: UIViewController {
     @IBOutlet weak var EggGroupLabel: UILabel?
     @IBOutlet weak var EggCycleLabel: UILabel?
     
+    @IBOutlet weak var LevelorItemEvolutionLabel: UILabel!
+    
     var myName: String?
-    
-    // These are the variables that we can pass information to.
-    var MyDexNum: String?
-    var MyName: String?
-    var MySpecie: String?
-    var MyDexEntry: String?
-    var MyImage: String?;
-    var MyFirstType: String?
-    var MySecondType: String?
-    var MyAbility: String?
-    var MyHiddenAbility: String?
-    
-    var MyBaseHp:Float?;
-    var MyBaseAttack:Float?;
-    var MyBaseDefense:Float?;
-    var MyBaseSpeed:Float?;
-    var MyBaseSpe_Def:Float?;
-    var MyBaseSpe_Att:Float?;
-    
-    var MyEvolutionImage: String?;
-    var MySecondEvolutionImage: String?;
-    var MyFirstPreEvolutionImage: String?;
-    var MySecondPreEvolutionImage: String?;
-    
-    var MyMaleGenderRatio: Double?
-    var MyFemaleGenderRatio: Double?
-    var MyEggGroup: String?
-    var MyEggCycle: Int?;
-    var MyEggCycleSteps: String?
-    
+
     // And here in this override function, we can load the new values of our variables.
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -178,71 +151,32 @@ class InformationViewController: UIViewController {
     private func ClearData(){
         
         PokemonImageViewer = nil;
-        MyImage = nil;
-        
         FirstEvolutionViewer = nil;
-        MyEvolutionImage = nil;
-        
         SecondEvolutionViewer = nil;
-        MySecondEvolutionImage = nil;
-        
         PokemonNameLabel = nil
-        MyName = nil;
-        MyDexNum = nil
-        
-        SpecieLabel = nil;
-        MySpecie = nil;
-
+        SpecieLabel = nil
         TypeLabel = nil
-        MyFirstType = nil
-        MySecondType = nil
-        
         DexEntryLabel = nil
-        MyDexEntry = nil
-
         //Base Stats of the Pokemon
         BaseHpSlider = nil
         BaseHpLabel = nil
-        MyBaseHp = nil
-        
         BaseAttackSlider = nil
         BaseAttackLabel = nil
-        MyBaseAttack = nil
-        
         BaseDefenseSlider = nil
         BaseDefenseLabel = nil
-        MyBaseDefense = nil
-        
         BaseSpeedSlider = nil
         BaseSpeedLabel = nil
-        MyBaseSpeed = nil
-        
         BaseSpDefenseSlider = nil
         BaseSpDefenseLabel = nil
-        MyBaseSpe_Def = nil
-        
         BaseSpAttackSlider = nil
         BaseSpAttackLabel = nil
-        MyBaseSpe_Att = nil
-        
         AbilityLabel = nil
-        MyAbility = nil
-        
         HiddenAbilityLabel = nil
-        MyHiddenAbility = nil
-        
         GenderRatioLabel = nil
-        MyMaleGenderRatio = nil
-        MyFemaleGenderRatio = nil
-        
         EggGroupLabel = nil
-        MyEggGroup = nil
-        
         EggCycleLabel = nil
-        MyEggCycle = nil
-        MyEggCycleSteps = nil
-        
         myName = nil
+        
     }
     
     private func GetPokemonInfoFromFirestore(myName: String){
@@ -344,6 +278,22 @@ class InformationViewController: UIViewController {
                     let maleRatio = PokemonData?["maleGenderRatio"] as? Double
                     let femaleRatio = PokemonData?["femaleGenderRatio"] as? Double
                     self.GenderRatioLabel?.text = "M \(maleRatio!)" + " / " + "F \(femaleRatio!)"
+                    
+                    let itemToLevel = PokemonData?["itemToLevel"] as? String
+                    let neededLevel = PokemonData?["xpToLevel"] as? Int
+                    
+                    if neededLevel == 0 && itemToLevel != ""{
+                        self.LevelorItemEvolutionLabel.text = "Needs " + itemToLevel! + " to evolve"
+                    }
+                    else
+                    if neededLevel != 0 && itemToLevel == ""{
+                        self.LevelorItemEvolutionLabel.text = "Needs " + "Level \(neededLevel!)" + " to evolve"
+                    }
+                    else
+                    if neededLevel == 0 && itemToLevel == ""{
+                        self.LevelorItemEvolutionLabel.text = "This pokemon does not evolve"
+                    }
+                    
                     
                 // And finally, we clear the data just in case ;)
                     PokemonData = nil

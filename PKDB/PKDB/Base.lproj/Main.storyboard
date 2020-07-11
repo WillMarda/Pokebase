@@ -387,85 +387,115 @@
                                                             <action selector="PokemonButtons_Clicked:" destination="xse-qP-0AQ" eventType="touchUpInside" id="zhh-cH-PdA"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvt-aA-h6B" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvt-aA-h6B" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="1596" width="364" height="41"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                        <state key="normal" title="Test Mon">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <state key="normal" title="Nidoran-F" image="NidoFSprite">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xse-qP-0AQ" eventType="touchUpInside" id="clc-Gf-Xfd"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JY5-cQ-rzN" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JY5-cQ-rzN" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="1653" width="364" height="41"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                        <state key="normal" title="Test Mon">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <state key="normal" title="Nidorina" image="NidorinaSprite">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xse-qP-0AQ" eventType="touchUpInside" id="ffo-DY-bMh"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MC-Ya-RT4" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MC-Ya-RT4" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="1710" width="364" height="41"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                        <state key="normal" title="Test Mon">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <state key="normal" title="Nidoqueen" image="QueenSprite">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xse-qP-0AQ" eventType="touchUpInside" id="7w8-dW-PV3"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9G-lB-BxY" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9G-lB-BxY" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="1767" width="364" height="41"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                        <state key="normal" title="Test Mon">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <state key="normal" title="Nidoran-M" image="NidoMSprite">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xse-qP-0AQ" eventType="touchUpInside" id="gjK-kK-iP8"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55H-T1-4tB" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55H-T1-4tB" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="1824" width="364" height="41"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                        <state key="normal" title="Test Mon">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <state key="normal" title="Nidorino" image="NidorinoSprite">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xse-qP-0AQ" eventType="touchUpInside" id="uuU-Oq-j52"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oot-0g-W2n" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oot-0g-W2n" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="1881" width="364" height="41"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                        <state key="normal" title="Test Mon">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <state key="normal" title="Nidoking" image="KingSprite">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xse-qP-0AQ" eventType="touchUpInside" id="FdG-WK-uh8"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOq-J4-tm5" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOq-J4-tm5" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="1938" width="364" height="41"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                        <state key="normal" title="Test Mon">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <state key="normal" title="Clefairy" image="ClefairSprite">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xse-qP-0AQ" eventType="touchUpInside" id="vXX-Lv-Yoi"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFM-Sd-dlK" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFM-Sd-dlK" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="1995" width="364" height="41"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                        <state key="normal" title="Test Mon">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <state key="normal" title="Clefable" image="ClefSprite">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xse-qP-0AQ" eventType="touchUpInside" id="Drn-9H-5lL"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHU-GL-uzu" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHU-GL-uzu" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="2052" width="364" height="41"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                        <state key="normal" title="Test Mon">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <state key="normal" title="Vulpix" image="VulSprite">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xse-qP-0AQ" eventType="touchUpInside" id="9Nb-y5-buL"/>
+                                                        </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laQ-z4-IJ8" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laQ-z4-IJ8" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="2109" width="364" height="41"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                        <state key="normal" title="Test Mon">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <state key="normal" title="Ninetales" image="NineSprite">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="PokemonButtons_Clicked:" destination="xse-qP-0AQ" eventType="touchUpInside" id="6JK-F5-u1L"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcH-tD-9eJ" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="2166" width="364" height="41"/>
@@ -1443,7 +1473,7 @@
         <!--InformationView-->
         <scene sceneID="TqJ-Wy-ZDg">
             <objects>
-                <viewController storyboardIdentifier="InformationView" title="InformationView" modalTransitionStyle="flipHorizontal" modalPresentationStyle="pageSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QnS-N7-zIC" customClass="InformationViewController" customModule="PKDB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InformationView" title="InformationView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QnS-N7-zIC" customClass="InformationViewController" customModule="PKDB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="A9k-eP-O7F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1795,6 +1825,20 @@
                                             <constraint firstAttribute="height" constant="900" id="lCA-Ef-Hjf"/>
                                         </constraints>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Evolution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htR-Xi-qti">
+                                        <rect key="frame" x="32" y="916" width="360" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="evolves at lvl 20 / or with moon stone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM8-Ru-DWY">
+                                        <rect key="frame" x="32" y="963" width="360" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="qqG-SJ-nqj" firstAttribute="top" secondItem="x03-GP-lpE" secondAttribute="top" constant="8" id="3c5-r5-syf"/>
@@ -1849,6 +1893,7 @@
                         <outlet property="FirstEvolutionViewer" destination="gYJ-Bs-KDi" id="pxt-mN-Wat"/>
                         <outlet property="GenderRatioLabel" destination="aZp-cM-Ett" id="XTb-ht-MBZ"/>
                         <outlet property="HiddenAbilityLabel" destination="kGs-i3-0Rb" id="Q5l-Ul-jWy"/>
+                        <outlet property="LevelorItemEvolutionLabel" destination="KM8-Ru-DWY" id="jDK-hY-w5w"/>
                         <outlet property="PokemonImageViewer" destination="BKc-3E-MXx" id="VEa-DZ-Os1"/>
                         <outlet property="PokemonNameLabel" destination="ZWK-OV-1eN" id="gjH-eK-DMN"/>
                         <outlet property="SecondEvolutionViewer" destination="MPO-j9-1b8" id="0hF-hv-mEh"/>
@@ -1858,7 +1903,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wdb-mh-QPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1897" y="115"/>
+            <point key="canvasLocation" x="1895.6521739130437" y="114.50892857142857"/>
         </scene>
     </scenes>
     <resources>
@@ -1871,15 +1916,24 @@
         <image name="CharSprite" width="32" height="32"/>
         <image name="CharizSprite" width="44" height="39"/>
         <image name="CharmeSprite" width="32" height="32"/>
+        <image name="ClefSprite" width="37" height="32"/>
+        <image name="ClefairSprite" width="32" height="32"/>
         <image name="EkanSprite" width="32" height="32"/>
         <image name="FearSprite" width="32" height="32"/>
         <image name="IvySprite" width="32" height="32"/>
         <image name="KakuSprite" width="32" height="32"/>
+        <image name="KingSprite" width="32" height="32"/>
         <image name="MetaSprite" width="32" height="32"/>
+        <image name="NidoFSprite" width="32" height="32"/>
+        <image name="NidoMSprite" width="32" height="32"/>
+        <image name="NidorinaSprite" width="32" height="32"/>
+        <image name="NidorinoSprite" width="32" height="32"/>
+        <image name="NineSprite" width="38" height="33"/>
         <image name="PidgSprite" width="32" height="32"/>
         <image name="PidgeSprite" width="32" height="32"/>
         <image name="PigotoSprite" width="32" height="32"/>
         <image name="PikaSprite" width="32" height="32"/>
+        <image name="QueenSprite" width="32" height="32"/>
         <image name="RaiSprite" width="39" height="35"/>
         <image name="RatiSprite" width="32" height="32"/>
         <image name="RattaSprite" width="32" height="32"/>
@@ -1888,6 +1942,7 @@
         <image name="SpearSprite" width="32" height="32"/>
         <image name="SquirSprite" width="32" height="32"/>
         <image name="VenaSprite" width="43" height="39"/>
+        <image name="VulSprite" width="32" height="32"/>
         <image name="WarSprite" width="32" height="32"/>
         <image name="WeeSprite" width="32" height="32"/>
     </resources>
