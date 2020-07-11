@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3E787CF8-0A13-4FCA-85CA-22FD61B39526"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "88F80DC5-DC41-4C40-AAB7-9CD01F0ABDCD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PKDB/InformationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "ClearData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D6AF70AA-50EC-45F8-BCCC-B165D91D464B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PKDB/InformationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F55FC931-5F55-4E0F-B4E4-6500E186EEA6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PKDB/InformationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "250"
+            endingLineNumber = "250"
+            landmarkName = "GetPokemonInfoFromFirestore(myName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F55FC931-5F55-4E0F-B4E4-6500E186EEA6 - b371417e8e4bace7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PKDB.InformationViewController.(GetPokemonInfoFromFirestore in _A3CA2ABA7B17C55D8D863A78BC52F6CA)(myName: Swift.String) -&gt; ()"
+                  moduleName = "PKDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/willemmarda/Desktop/Code%20and%20Video%20Stuff/Code%20Source/Swift/PKDB/PKDB/InformationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "253"
+                  endingLineNumber = "253"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "F55FC931-5F55-4E0F-B4E4-6500E186EEA6 - 2c82edca738d18ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PKDB.InformationViewController.(GetPokemonInfoFromFirestore in _A3CA2ABA7B17C55D8D863A78BC52F6CA)(myName: Swift.String) -&gt; ()"
+                  moduleName = "PKDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/willemmarda/Desktop/Code%20and%20Video%20Stuff/Code%20Source/Swift/PKDB/PKDB/InformationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "253"
+                  endingLineNumber = "253"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A173181-DEC5-4E2D-841A-A55415913DB8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PKDB/PokedexViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03A4CFD6-10D1-4E94-ADFF-1ABC5343EBC6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PKDB/InformationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "InformationViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "03A4CFD6-10D1-4E94-ADFF-1ABC5343EBC6 - 18f1bca7949fc62a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PKDB.InformationViewController.PokemonImageViewer.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "PKDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/willemmarda/Desktop/Code%20and%20Video%20Stuff/Code%20Source/Swift/PKDB/PKDB/InformationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "128">
+               </Location>
+               <Location
+                  uuid = "03A4CFD6-10D1-4E94-ADFF-1ABC5343EBC6 - f0ee5c886251f226"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PKDB.InformationViewController.PokemonImageViewer.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "PKDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/willemmarda/Desktop/Code%20and%20Video%20Stuff/Code%20Source/Swift/PKDB/PKDB/InformationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "03A4CFD6-10D1-4E94-ADFF-1ABC5343EBC6 - c9c3b9813843bb29"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PKDB.InformationViewController.PokemonImageViewer.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "PKDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/willemmarda/Desktop/Code%20and%20Video%20Stuff/Code%20Source/Swift/PKDB/PKDB/InformationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "03A4CFD6-10D1-4E94-ADFF-1ABC5343EBC6 - f156971cbb196a7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PKDB.InformationViewController.PokemonImageViewer.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "PKDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/willemmarda/Desktop/Code%20and%20Video%20Stuff/Code%20Source/Swift/PKDB/PKDB/InformationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "03A4CFD6-10D1-4E94-ADFF-1ABC5343EBC6 - dc641bb8ec90dfea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PKDB.InformationViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; PKDB.InformationViewController"
+                  moduleName = "PKDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/willemmarda/Desktop/Code%20and%20Video%20Stuff/Code%20Source/Swift/PKDB/PKDB/InformationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "1044">
+               </Location>
+               <Location
+                  uuid = "03A4CFD6-10D1-4E94-ADFF-1ABC5343EBC6 - 81ad96e4ce9c50e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PKDB.InformationViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PKDB.InformationViewController&gt;"
+                  moduleName = "PKDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/willemmarda/Desktop/Code%20and%20Video%20Stuff/Code%20Source/Swift/PKDB/PKDB/InformationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "992">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
