@@ -25,33 +25,37 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "HomeSegue", sender: self)
     }
     
+    @IBAction func GoToTabbedPokedex(_ sender: Any) {
+        performSegue(withIdentifier: "HomeSegueTabbed", sender: self)
+    }
+    
     @IBAction func AddToCloud(_ sender: Any) {
 
-        Firestore.firestore().collection("PokeDex").document("Ninetales").setData([
-            "name": "Ninetales",
-            "specie": "Fox Pokemon",
-            "dexNum": "038",
-            "dexEntry": "Very smart and very vengeful, Ninetales is said to live 1,000 years, and each of its tails is loaded with supernatural powers. According to an enduring legend, nine noble saints were united and reincarnated as this Pokémon.",
-            "typeOne": "Fire",
-            "typeTwo": "",
-            "ability": "Flash Fire",
-            "hiddenAbility": "Drought",
-            "image": "ninetales",
-            "hp": 73,
-            "attack": 76,
-            "defense": 75,
-            "speed": 100,
-            "sp_def": 81,
-            "sp_att": 100,
+        Firestore.firestore().collection("PokeDex").document("Golbat").setData([
+            "name": "Golbat",
+            "specie": "Bat Pokemon",
+            "dexNum": "042",
+            "dexEntry": "Golbat attacks in a stealthy manner, without warning. Its sharp fangs are used to bite and to suck blood. Once it bites, it will not stop draining energy from the victim even if it gets too heavy to fly.",
+            "image": "golbat",
+            "typeOne": "Poison",
+            "typeTwo": "Flying",
+            "ability": "Inner Focus",
+            "hiddenAbility": "Inflitrator",
+            "hp": 75,
+            "attack": 80,
+            "defense": 70,
+            "speed": 90,
+            "sp_def": 65,
+            "sp_att": 75,
             "evolution": "",
             "evolutionTwo": "",
-            "preEvoOne": "vulpix",
+            "preEvoOne": "zubat",
             "preEvoTwo": "",
-            "eggGroup": "Field",
-            "eggCycle": 20,
-            "eggCycleSteps": "4,884–5,140 steps",
-            "maleGenderRatio": 25,
-            "femaleGenderRatio": 75,
+            "eggGroup": "Flying",
+            "eggCycle": 15,
+            "eggCycleSteps": "3,599–3,855 steps",
+            "maleGenderRatio": 50,
+            "femaleGenderRatio": 50,
             "xpToLevel": 0,
             "itemToLevel": ""
 
