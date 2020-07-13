@@ -49,10 +49,8 @@ class PokedexViewController: UIViewController {
 
     }
 
-    @IBAction func BackButtonClicked(_ sender: Any) {
-    
-        dismiss(animated:true, completion: nil)
-
+    @IBAction func ItemTabButton(_ sender: Any) {
+        performSegue(withIdentifier: "ItemTabSegue", sender: self)
     }
     
     deinit{

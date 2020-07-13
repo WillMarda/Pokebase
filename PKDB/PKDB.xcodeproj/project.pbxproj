@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0987E481E376B46C476CEAB9 /* Pods_PKDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CE1AC91020267BBD75E548 /* Pods_PKDB.framework */; };
+		94124A3524BBD7E900880986 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94124A3424BBD7E900880986 /* ItemViewController.swift */; };
 		94C86E3424B8DA33008C2D18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94C86E3324B8DA33008C2D18 /* GoogleService-Info.plist */; };
 		94E65BCF24B8D77B009A51B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65BCE24B8D77B009A51B7 /* AppDelegate.swift */; };
 		94E65BD124B8D77B009A51B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65BD024B8D77B009A51B7 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		452831A8DFFE98214032A8D2 /* Pods-PKDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PKDB.release.xcconfig"; path = "Target Support Files/Pods-PKDB/Pods-PKDB.release.xcconfig"; sourceTree = "<group>"; };
+		94124A3424BBD7E900880986 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		94C86E3324B8DA33008C2D18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		94E65BCB24B8D77B009A51B7 /* PKDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PKDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E65BCE24B8D77B009A51B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				94E65BD724B8D77D009A51B7 /* Assets.xcassets */,
 				94E65BD924B8D77D009A51B7 /* LaunchScreen.storyboard */,
 				94E65BDC24B8D77D009A51B7 /* Info.plist */,
+				94124A3424BBD7E900880986 /* ItemViewController.swift */,
 			);
 			path = PKDB;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94124A3524BBD7E900880986 /* ItemViewController.swift in Sources */,
 				94E65BD324B8D77B009A51B7 /* ViewController.swift in Sources */,
 				94E65BE524B8D8D8009A51B7 /* PokedexViewController.swift in Sources */,
 				94E65BCF24B8D77B009A51B7 /* AppDelegate.swift in Sources */,
