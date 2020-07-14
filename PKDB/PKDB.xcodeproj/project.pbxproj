@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0987E481E376B46C476CEAB9 /* Pods_PKDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CE1AC91020267BBD75E548 /* Pods_PKDB.framework */; };
+		9400B93D24BD667F0052028F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947C28A124BD256100745BCB /* WidgetKit.framework */; };
+		9400B93E24BD667F0052028F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 947C28A324BD256100745BCB /* SwiftUI.framework */; };
+		9400B94124BD667F0052028F /* PokebaseCommit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400B94024BD667F0052028F /* PokebaseCommit.swift */; };
+		9400B94324BD667F0052028F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9400B94224BD667F0052028F /* Assets.xcassets */; };
+		9400B94724BD667F0052028F /* PokebaseCommitExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9400B93C24BD667F0052028F /* PokebaseCommitExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9400B96124BD676C0052028F /* PokebaseIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 94D1DA1E24BD5C720008261B /* PokebaseIntent.intentdefinition */; };
 		94124A3524BBD7E900880986 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94124A3424BBD7E900880986 /* ItemViewController.swift */; };
 		94C86E3424B8DA33008C2D18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94C86E3324B8DA33008C2D18 /* GoogleService-Info.plist */; };
+		94D1DA1F24BD5C720008261B /* PokebaseIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 94D1DA1E24BD5C720008261B /* PokebaseIntent.intentdefinition */; };
 		94E65BCF24B8D77B009A51B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65BCE24B8D77B009A51B7 /* AppDelegate.swift */; };
 		94E65BD124B8D77B009A51B7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65BD024B8D77B009A51B7 /* SceneDelegate.swift */; };
 		94E65BD324B8D77B009A51B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65BD224B8D77B009A51B7 /* ViewController.swift */; };
@@ -19,12 +25,45 @@
 		94E65BE524B8D8D8009A51B7 /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65BE224B8D8D8009A51B7 /* PokedexViewController.swift */; };
 		94E65BE624B8D8D8009A51B7 /* ImButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65BE324B8D8D8009A51B7 /* ImButton.swift */; };
 		94E65BE724B8D8D8009A51B7 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E65BE424B8D8D8009A51B7 /* InformationViewController.swift */; };
+		D19A3720153F9290D0282D7C /* Pods_PKDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5521A36D66A4B25D71615B46 /* Pods_PKDB.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9400B94524BD667F0052028F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94E65BC324B8D77B009A51B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9400B93B24BD667F0052028F;
+			remoteInfo = PokebaseCommitExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94D1DA3624BD65480008261B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9400B94724BD667F0052028F /* PokebaseCommitExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		452831A8DFFE98214032A8D2 /* Pods-PKDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PKDB.release.xcconfig"; path = "Target Support Files/Pods-PKDB/Pods-PKDB.release.xcconfig"; sourceTree = "<group>"; };
+		1FB9E873AA282480254312C0 /* Pods-PKDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PKDB.debug.xcconfig"; path = "Target Support Files/Pods-PKDB/Pods-PKDB.debug.xcconfig"; sourceTree = "<group>"; };
+		5521A36D66A4B25D71615B46 /* Pods_PKDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PKDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9400B93C24BD667F0052028F /* PokebaseCommitExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PokebaseCommitExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9400B94024BD667F0052028F /* PokebaseCommit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokebaseCommit.swift; sourceTree = "<group>"; };
+		9400B94224BD667F0052028F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9400B94424BD667F0052028F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94124A3424BBD7E900880986 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		947C28A124BD256100745BCB /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		947C28A324BD256100745BCB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		94C86E3324B8DA33008C2D18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		94D1DA1E24BD5C720008261B /* PokebaseIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = PokebaseIntent.intentdefinition; sourceTree = "<group>"; };
 		94E65BCB24B8D77B009A51B7 /* PKDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PKDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E65BCE24B8D77B009A51B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94E65BD024B8D77B009A51B7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,16 +75,24 @@
 		94E65BE224B8D8D8009A51B7 /* PokedexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
 		94E65BE324B8D8D8009A51B7 /* ImButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImButton.swift; sourceTree = "<group>"; };
 		94E65BE424B8D8D8009A51B7 /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
-		9BEBDCD8AFA7A1E1DF651845 /* Pods-PKDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PKDB.debug.xcconfig"; path = "Target Support Files/Pods-PKDB/Pods-PKDB.debug.xcconfig"; sourceTree = "<group>"; };
-		F0CE1AC91020267BBD75E548 /* Pods_PKDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PKDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDDF286258B4AC52939F4756 /* Pods-PKDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PKDB.release.xcconfig"; path = "Target Support Files/Pods-PKDB/Pods-PKDB.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9400B93924BD667F0052028F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9400B93E24BD667F0052028F /* SwiftUI.framework in Frameworks */,
+				9400B93D24BD667F0052028F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94E65BC824B8D77B009A51B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0987E481E376B46C476CEAB9 /* Pods_PKDB.framework in Frameworks */,
+				D19A3720153F9290D0282D7C /* Pods_PKDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,8 +102,8 @@
 		43110C22EEA600F0679873E5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9BEBDCD8AFA7A1E1DF651845 /* Pods-PKDB.debug.xcconfig */,
-				452831A8DFFE98214032A8D2 /* Pods-PKDB.release.xcconfig */,
+				1FB9E873AA282480254312C0 /* Pods-PKDB.debug.xcconfig */,
+				CDDF286258B4AC52939F4756 /* Pods-PKDB.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -64,15 +111,29 @@
 		69EAE159F5428866D8F21FBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F0CE1AC91020267BBD75E548 /* Pods_PKDB.framework */,
+				947C28A124BD256100745BCB /* WidgetKit.framework */,
+				947C28A324BD256100745BCB /* SwiftUI.framework */,
+				5521A36D66A4B25D71615B46 /* Pods_PKDB.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9400B93F24BD667F0052028F /* PokebaseCommit */ = {
+			isa = PBXGroup;
+			children = (
+				9400B94024BD667F0052028F /* PokebaseCommit.swift */,
+				9400B94224BD667F0052028F /* Assets.xcassets */,
+				9400B94424BD667F0052028F /* Info.plist */,
+				94D1DA1E24BD5C720008261B /* PokebaseIntent.intentdefinition */,
+			);
+			path = PokebaseCommit;
 			sourceTree = "<group>";
 		};
 		94E65BC224B8D77B009A51B7 = {
 			isa = PBXGroup;
 			children = (
 				94E65BCD24B8D77B009A51B7 /* PKDB */,
+				9400B93F24BD667F0052028F /* PokebaseCommit */,
 				94E65BCC24B8D77B009A51B7 /* Products */,
 				43110C22EEA600F0679873E5 /* Pods */,
 				69EAE159F5428866D8F21FBD /* Frameworks */,
@@ -83,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				94E65BCB24B8D77B009A51B7 /* PKDB.app */,
+				9400B93C24BD667F0052028F /* PokebaseCommitExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,19 +171,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94E65BCA24B8D77B009A51B7 /* PKDB */ = {
+		9400B93B24BD667F0052028F /* PokebaseCommitExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94E65BDF24B8D77D009A51B7 /* Build configuration list for PBXNativeTarget "PKDB" */;
+			buildConfigurationList = 9400B94824BD667F0052028F /* Build configuration list for PBXNativeTarget "PokebaseCommitExtension" */;
 			buildPhases = (
-				5B962FAC23BFB2DF3BE3B265 /* [CP] Check Pods Manifest.lock */,
-				94E65BC724B8D77B009A51B7 /* Sources */,
-				94E65BC824B8D77B009A51B7 /* Frameworks */,
-				94E65BC924B8D77B009A51B7 /* Resources */,
-				94D8EAD1B9A6FD817CA3DD8C /* [CP] Embed Pods Frameworks */,
+				9400B93824BD667F0052028F /* Sources */,
+				9400B93924BD667F0052028F /* Frameworks */,
+				9400B93A24BD667F0052028F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = PokebaseCommitExtension;
+			productName = PokebaseCommitExtension;
+			productReference = 9400B93C24BD667F0052028F /* PokebaseCommitExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		94E65BCA24B8D77B009A51B7 /* PKDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94E65BDF24B8D77D009A51B7 /* Build configuration list for PBXNativeTarget "PKDB" */;
+			buildPhases = (
+				B8710FCE2BF10D851CA56A69 /* [CP] Check Pods Manifest.lock */,
+				94E65BC724B8D77B009A51B7 /* Sources */,
+				94E65BC824B8D77B009A51B7 /* Frameworks */,
+				94E65BC924B8D77B009A51B7 /* Resources */,
+				A4042EA0B9EC3FA20F9E4676 /* [CP] Embed Pods Frameworks */,
+				94D1DA3624BD65480008261B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9400B94624BD667F0052028F /* PBXTargetDependency */,
 			);
 			name = PKDB;
 			productName = PKDB;
@@ -134,10 +215,13 @@
 		94E65BC324B8D77B009A51B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = WillMarda;
 				TargetAttributes = {
+					9400B93B24BD667F0052028F = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					94E65BCA24B8D77B009A51B7 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -157,11 +241,20 @@
 			projectRoot = "";
 			targets = (
 				94E65BCA24B8D77B009A51B7 /* PKDB */,
+				9400B93B24BD667F0052028F /* PokebaseCommitExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9400B93A24BD667F0052028F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9400B94324BD667F0052028F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94E65BC924B8D77B009A51B7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,7 +269,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5B962FAC23BFB2DF3BE3B265 /* [CP] Check Pods Manifest.lock */ = {
+		A4042EA0B9EC3FA20F9E4676 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PKDB/Pods-PKDB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PKDB/Pods-PKDB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PKDB/Pods-PKDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8710FCE2BF10D851CA56A69 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -198,26 +308,18 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		94D8EAD1B9A6FD817CA3DD8C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PKDB/Pods-PKDB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PKDB/Pods-PKDB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PKDB/Pods-PKDB-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9400B93824BD667F0052028F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9400B96124BD676C0052028F /* PokebaseIntent.intentdefinition in Sources */,
+				9400B94124BD667F0052028F /* PokebaseCommit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94E65BC724B8D77B009A51B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -226,6 +328,7 @@
 				94E65BD324B8D77B009A51B7 /* ViewController.swift in Sources */,
 				94E65BE524B8D8D8009A51B7 /* PokedexViewController.swift in Sources */,
 				94E65BCF24B8D77B009A51B7 /* AppDelegate.swift in Sources */,
+				94D1DA1F24BD5C720008261B /* PokebaseIntent.intentdefinition in Sources */,
 				94E65BE624B8D8D8009A51B7 /* ImButton.swift in Sources */,
 				94E65BD124B8D77B009A51B7 /* SceneDelegate.swift in Sources */,
 				94E65BE724B8D8D8009A51B7 /* InformationViewController.swift in Sources */,
@@ -233,6 +336,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9400B94624BD667F0052028F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9400B93B24BD667F0052028F /* PokebaseCommitExtension */;
+			targetProxy = 9400B94524BD667F0052028F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		94E65BD424B8D77B009A51B7 /* Main.storyboard */ = {
@@ -254,6 +365,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9400B94924BD667F0052028F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M43P23T68;
+				INFOPLIST_FILE = PokebaseCommit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WillMarda.PKDB.PokebaseCommit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9400B94A24BD667F0052028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8M43P23T68;
+				INFOPLIST_FILE = PokebaseCommit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WillMarda.PKDB.PokebaseCommit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		94E65BDD24B8D77D009A51B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -370,16 +527,19 @@
 		};
 		94E65BE024B8D77D009A51B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BEBDCD8AFA7A1E1DF651845 /* Pods-PKDB.debug.xcconfig */;
+			baseConfigurationReference = 1FB9E873AA282480254312C0 /* Pods-PKDB.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M43P23T68;
 				INFOPLIST_FILE = PKDB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.01;
 				PRODUCT_BUNDLE_IDENTIFIER = com.WillMarda.PKDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -389,16 +549,19 @@
 		};
 		94E65BE124B8D77D009A51B7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 452831A8DFFE98214032A8D2 /* Pods-PKDB.release.xcconfig */;
+			baseConfigurationReference = CDDF286258B4AC52939F4756 /* Pods-PKDB.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M43P23T68;
 				INFOPLIST_FILE = PKDB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.01;
 				PRODUCT_BUNDLE_IDENTIFIER = com.WillMarda.PKDB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -409,6 +572,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9400B94824BD667F0052028F /* Build configuration list for PBXNativeTarget "PokebaseCommitExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9400B94924BD667F0052028F /* Debug */,
+				9400B94A24BD667F0052028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		94E65BC624B8D77B009A51B7 /* Build configuration list for PBXProject "PKDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
