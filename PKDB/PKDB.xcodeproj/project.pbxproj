@@ -153,17 +153,17 @@
 			isa = PBXGroup;
 			children = (
 				94C86E3324B8DA33008C2D18 /* GoogleService-Info.plist */,
+				94E65BDC24B8D77D009A51B7 /* Info.plist */,
 				94E65BCE24B8D77B009A51B7 /* AppDelegate.swift */,
-				94E65BD024B8D77B009A51B7 /* SceneDelegate.swift */,
-				94E65BD224B8D77B009A51B7 /* ViewController.swift */,
 				94E65BE324B8D8D8009A51B7 /* ImButton.swift */,
 				94E65BE424B8D8D8009A51B7 /* InformationViewController.swift */,
+				94124A3424BBD7E900880986 /* ItemViewController.swift */,
 				94E65BE224B8D8D8009A51B7 /* PokedexViewController.swift */,
-				94E65BD424B8D77B009A51B7 /* Main.storyboard */,
+				94E65BD024B8D77B009A51B7 /* SceneDelegate.swift */,
+				94E65BD224B8D77B009A51B7 /* ViewController.swift */,
 				94E65BD724B8D77D009A51B7 /* Assets.xcassets */,
 				94E65BD924B8D77D009A51B7 /* LaunchScreen.storyboard */,
-				94E65BDC24B8D77D009A51B7 /* Info.plist */,
-				94124A3424BBD7E900880986 /* ItemViewController.swift */,
+				94E65BD424B8D77B009A51B7 /* Main.storyboard */,
 			);
 			path = PKDB;
 			sourceTree = "<group>";

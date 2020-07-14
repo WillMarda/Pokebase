@@ -87,7 +87,7 @@ struct LastCommitEntry: TimelineEntry {
     public let branch: RepoBranch
     
     var relevance: TimelineEntryRelevance? {
-        return TimelineEntryRelevance(score: 10) // 0 - not important | 100 - very important
+        return TimelineEntryRelevance(score: 80) // 0 - not important | 100 - very important
     }
     
 }
