@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27w-J6-nOP" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27w-J6-nOP" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
                                 <rect key="frame" x="20" y="537" width="374" height="78"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
@@ -40,7 +40,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.95475500820000003" green="0.404363215" blue="0.41174876690000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.99807554480000005" green="0.46141042474902733" blue="0.50062780523784167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="27w-J6-nOP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8l8-NH-mkI"/>
                             <constraint firstItem="27w-J6-nOP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="493" id="A9U-JT-bzY"/>
@@ -515,7 +515,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYd-qh-tj5" userLabel="PokemonListView">
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYd-qh-tj5" userLabel="PokemonListView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <scrollView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaJ-zP-h9g">
@@ -1931,11 +1931,13 @@
                                                         </state>
                                                     </button>
                                                 </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="364" id="vpV-m8-sWz"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="wd1-SL-HPn" secondAttribute="trailing" constant="25" id="5Ea-QR-Tyo"/>
                                             <constraint firstItem="wd1-SL-HPn" firstAttribute="top" secondItem="yaJ-zP-h9g" secondAttribute="top" constant="12" id="833-5w-A05"/>
@@ -1982,7 +1984,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="37S-8q-fpZ"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="plX-p8-Xry"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="plX-p8-Xry"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Back">
@@ -1993,7 +1995,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.9978188872" green="0.43506189760000002" blue="0.40737264680000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.99807554480000005" green="0.46141042474902733" blue="0.50062780523784167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="MZg-79-gP1" secondAttribute="bottom" constant="26" id="5dI-SX-3Vi"/>
                                     <constraint firstItem="yaJ-zP-h9g" firstAttribute="top" secondItem="oYd-qh-tj5" secondAttribute="top" constant="52" id="6um-84-7qT"/>
@@ -2051,7 +2053,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDd-WL-qUk" userLabel="PokemonListView">
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDd-WL-qUk" userLabel="PokemonListView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <scrollView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obc-Jc-d7p">
@@ -2200,11 +2202,13 @@
                                                         </state>
                                                     </button>
                                                 </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="364" id="m34-NB-gG3"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="BcL-pt-qnk" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="fbJ-Fx-hq3" secondAttribute="trailing" constant="25" id="1Fu-sv-9Zf"/>
                                             <constraint firstAttribute="bottom" secondItem="fbJ-Fx-hq3" secondAttribute="bottom" constant="12" id="7Ms-HV-qoL"/>
@@ -2216,50 +2220,70 @@
                                         <viewLayoutGuide key="contentLayoutGuide" id="Lm7-un-ght"/>
                                         <viewLayoutGuide key="frameLayoutGuide" id="BcL-pt-qnk"/>
                                     </scrollView>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7C-o2-7Z4">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dto-ol-Agf">
                                         <rect key="frame" x="25" y="822" width="48" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="48" id="hDg-IH-hK3"/>
-                                            <constraint firstAttribute="height" constant="48" id="j0Z-cH-TQt"/>
+                                            <constraint firstAttribute="height" constant="48" id="3Jh-JT-jbv"/>
+                                            <constraint firstAttribute="width" constant="48" id="YDB-i1-rFk"/>
                                         </constraints>
                                         <color key="tintColor" systemColor="darkTextColor"/>
                                         <state key="normal" image="Pokedex Icon"/>
                                         <connections>
-                                            <action selector="PokedexTabButton:" destination="dgR-iS-eXv" eventType="touchUpInside" id="ydx-ax-DHi"/>
+                                            <action selector="PokedexTabButton:" destination="dgR-iS-eXv" eventType="touchUpInside" id="xe5-gg-UqH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyK-QU-qob">
-                                        <rect key="frame" x="182" y="822" width="48" height="48"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1k-R9-GOL">
+                                        <rect key="frame" x="102" y="822" width="48" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="5Oy-pM-Kug"/>
-                                            <constraint firstAttribute="width" constant="48" id="czl-TF-kkV"/>
+                                            <constraint firstAttribute="height" constant="48" id="1Rc-cg-KgE"/>
+                                            <constraint firstAttribute="width" constant="48" id="k7W-cF-48X"/>
                                         </constraints>
                                         <color key="tintColor" systemColor="darkTextColor"/>
                                         <state key="normal" image="Pokedex Icon filled"/>
+                                        <connections>
+                                            <action selector="ItemTabButton:" destination="zxE-Ew-5AR" eventType="touchUpInside" id="OIX-E1-5pJ"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4W-wY-85g">
-                                        <rect key="frame" x="339" y="819" width="48" height="48"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3a-s9-DAw">
+                                        <rect key="frame" x="183" y="822" width="48" height="48"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="Rfn-71-OIs"/>
-                                            <constraint firstAttribute="width" constant="48" id="aPf-ie-Y2F"/>
+                                            <constraint firstAttribute="height" constant="48" id="aG2-2X-LID"/>
+                                            <constraint firstAttribute="width" constant="48" id="beX-zn-VbY"/>
                                         </constraints>
                                         <color key="tintColor" systemColor="darkTextColor"/>
                                         <state key="normal" image="Pokedex Icon"/>
                                     </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrg-pd-XNb" customClass="ImButton" customModule="PKDB" customModuleProvider="target">
+                                        <rect key="frame" x="292" y="822" width="98" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="Zdv-cF-QG2"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="fyO-ek-Xer"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="BackbuttonClicked:" destination="zxE-Ew-5AR" eventType="touchUpInside" id="0n2-Zz-RhH"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.9978188872" green="0.43506189760000002" blue="0.40737264680000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.99807554480000005" green="0.46141042474902733" blue="0.50062780523784167" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="X4W-wY-85g" secondAttribute="bottom" constant="29" id="25C-Wv-yVH"/>
-                                    <constraint firstItem="jyK-QU-qob" firstAttribute="leading" secondItem="C7C-o2-7Z4" secondAttribute="trailing" constant="109" id="C4u-VI-5s1"/>
-                                    <constraint firstItem="C7C-o2-7Z4" firstAttribute="leading" secondItem="oDd-WL-qUk" secondAttribute="leading" constant="25" id="Dhp-UA-hgc"/>
-                                    <constraint firstItem="X4W-wY-85g" firstAttribute="leading" secondItem="jyK-QU-qob" secondAttribute="trailing" constant="109" id="Dmh-eH-tCc"/>
+                                    <constraint firstItem="i1k-R9-GOL" firstAttribute="top" secondItem="Obc-Jc-d7p" secondAttribute="bottom" constant="11" id="0lN-hr-kJH"/>
+                                    <constraint firstItem="Xrg-pd-XNb" firstAttribute="leading" secondItem="N3a-s9-DAw" secondAttribute="trailing" constant="61" id="1hD-ff-ZJk"/>
+                                    <constraint firstItem="Xrg-pd-XNb" firstAttribute="leading" secondItem="N3a-s9-DAw" secondAttribute="trailing" constant="61" id="418-7R-w5k"/>
+                                    <constraint firstItem="Dto-ol-Agf" firstAttribute="leading" secondItem="oDd-WL-qUk" secondAttribute="leading" constant="25" id="604-xx-aul"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xrg-pd-XNb" secondAttribute="trailing" constant="24" id="9J4-kZ-27H"/>
+                                    <constraint firstItem="N3a-s9-DAw" firstAttribute="leading" secondItem="i1k-R9-GOL" secondAttribute="trailing" constant="33" id="Avs-qq-t5E"/>
                                     <constraint firstItem="Obc-Jc-d7p" firstAttribute="leading" secondItem="oDd-WL-qUk" secondAttribute="leading" id="Ihm-ey-Ryd"/>
-                                    <constraint firstAttribute="bottom" secondItem="C7C-o2-7Z4" secondAttribute="bottom" constant="26" id="JaQ-Wj-kfS"/>
-                                    <constraint firstItem="jyK-QU-qob" firstAttribute="top" secondItem="Obc-Jc-d7p" secondAttribute="bottom" constant="11" id="LSz-ge-73O"/>
-                                    <constraint firstAttribute="bottom" secondItem="jyK-QU-qob" secondAttribute="bottom" constant="26" id="LqQ-Vb-nT9"/>
+                                    <constraint firstItem="Dto-ol-Agf" firstAttribute="top" secondItem="Obc-Jc-d7p" secondAttribute="bottom" constant="11" id="PqP-e2-giR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xrg-pd-XNb" secondAttribute="bottom" constant="32" id="ZsF-cn-oxv"/>
                                     <constraint firstAttribute="bottom" secondItem="Obc-Jc-d7p" secondAttribute="bottom" constant="85" id="ayx-C8-RF8"/>
-                                    <constraint firstItem="X4W-wY-85g" firstAttribute="top" secondItem="Obc-Jc-d7p" secondAttribute="bottom" constant="8" id="dRR-ji-Pfb"/>
-                                    <constraint firstItem="C7C-o2-7Z4" firstAttribute="top" secondItem="Obc-Jc-d7p" secondAttribute="bottom" constant="11" id="ft1-HQ-GZ2"/>
+                                    <constraint firstItem="N3a-s9-DAw" firstAttribute="top" secondItem="Obc-Jc-d7p" secondAttribute="bottom" constant="11" id="l5n-vR-GAT"/>
+                                    <constraint firstItem="Xrg-pd-XNb" firstAttribute="top" secondItem="Obc-Jc-d7p" secondAttribute="bottom" constant="11" id="mR0-XX-rv7"/>
+                                    <constraint firstItem="i1k-R9-GOL" firstAttribute="leading" secondItem="Dto-ol-Agf" secondAttribute="trailing" constant="29" id="s3k-D2-kKs"/>
                                     <constraint firstAttribute="trailing" secondItem="Obc-Jc-d7p" secondAttribute="trailing" id="w2E-A6-i2N"/>
                                     <constraint firstItem="Obc-Jc-d7p" firstAttribute="top" secondItem="oDd-WL-qUk" secondAttribute="top" constant="35" id="yMd-eH-cpC"/>
                                 </constraints>
@@ -2288,7 +2312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2q-t5-SKk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45" y="860"/>
+            <point key="canvasLocation" x="138" y="854"/>
         </scene>
     </scenes>
     <resources>
